@@ -37,13 +37,12 @@
 <section id="container" class="">
     <!--header start-->
     <header class="header dark-bg">
-        <!--      <div class="toggle-nav">-->
-        <!--        <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>-->
-        <!--      </div>-->
+        <div class="toggle-nav">
+            <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i
+                        class="icon_menu"></i></div>
+        </div>
 
-        <!--logo start-->
-        <!--      <a href="index.php" class="logo">Nice <span class="lite">Admin</span></a>-->
-        <!--logo end-->
+        <a href="index.php" class="logo">CONSULAT  <span class="lite">GUINEE</span></a>
 
     </header>
     <!--header end-->
@@ -76,10 +75,11 @@
         <section class=" wrapper">
             <div class="alert alert-success" style="background: maroon; color:#fff">
                 <?php
+                include("config/constantes.php");
                 if (!isset($_GET['page']) or $_GET['page'] != "connexion") {
-                    echo "Veuillez-vous inscrire pour demander une carte consulaire ";
+                    echo MSG_INSCRIPTION;
                 } else if ($_GET['page'] == "connexion") {
-                    echo "Veuillez-vous identifier pour acceder a votre espace personnel";
+                    echo MSG_LOGIN;
                 }
                 ?>
             </div>
