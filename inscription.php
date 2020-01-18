@@ -1,6 +1,6 @@
 
     <div class="panel-body">
-        <form class="form-horizontal " method="POST">
+        <form class="form-horizontal " method="POST" action="controller/inscriptionAction.php">
             <div class="form-group">
                 <label class="col-sm-2 control-label">Pr&eacute;nom</label>
                 <div class="col-sm-10">
@@ -53,13 +53,13 @@
             <div class="form-group">
                 <label class="col-sm-2 control-label">Num&eacute;ro de la pi&egrave;ce</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control round-input" placeholder="" name="MOTDEPASSE">
+                    <input type="text" class="form-control round-input" placeholder="" name="MOTDEPASSE">
                 </div>
             </div>
             <div class="form-group">
                 <label class="col-sm-2 control-label">&nbsp;</label>
                 <div class="col-sm-10">
-                    <button class="btn btn-primary" type="submit">JE M&apos;INSCRIS</button>
+                    <input class="btn btn-primary" type="submit" value="JE M'INSCRIS" name="save"></input>
                 </div>
             </div>
 
