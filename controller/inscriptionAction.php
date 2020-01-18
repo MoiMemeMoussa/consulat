@@ -7,14 +7,8 @@ if (isset($_POST['save'])) {
     $email = $_POST['EMAIL'];
     $password = $_POST['MOTDEPASSE'];
     $piece = $_POST['PIECES'];
-
-    echo "Prenom = " . $prenom . "<br>";
-    echo "Nom =    " . $nom . "<br>";
-    echo "Piece = " . $piece . "<br>";
-    echo "email = " . $email . "<br>";
-    echo "mot de passe  = " . $password . "<br>";
-    echo "date de naissance  = " . $datenaissance . "<br>";
-    echo "lieu de naissance   = " . $lieunaissance . "<br>";
+    include("../models/Db.php");
+    $database = new Db();
 
 } else {
     header("Location:../index.php");
